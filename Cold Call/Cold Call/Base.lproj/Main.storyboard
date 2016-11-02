@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cold_Call" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpC-Gb-j0s">
+                                <frame key="frameInset" minX="98" minY="28" width="179" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="179" id="4bN-qm-y4S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXW-4P-OxH">
+                                <frame key="frameInset" minX="73" minY="560" width="229" height="54"/>
+                                <color key="backgroundColor" red="0.34978359390000002" green="0.53762211839999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="229" id="Y9g-bV-yca"/>
+                                    <constraint firstAttribute="height" constant="54" id="bTF-Ki-TAp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Cold Call">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" red="0.34978359393244496" green="0.53762211844609054" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="coldCallPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4mv-Od-yOk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZPC-tQ-fhI">
+                                <frame key="frameInset" minX="41" minY="178" width="293" height="311"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="220"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZPC-tQ-fhI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0Wg-87-rSp"/>
+                            <constraint firstItem="ZPC-tQ-fhI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="34T-yP-6aB"/>
+                            <constraint firstItem="OXW-4P-OxH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KXi-wC-ATz"/>
+                            <constraint firstItem="gpC-Gb-j0s" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="dBi-Rz-sAn"/>
+                            <constraint firstItem="gpC-Gb-j0s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vc4-rL-Ae8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OXW-4P-OxH" secondAttribute="bottom" constant="20" id="zbn-dS-yvR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="gpC-Gb-j0s" id="BJc-Ul-B4d"/>
+                        <outlet property="numberLabel" destination="ZPC-tQ-fhI" id="9gz-pF-bPP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2753" y="-28"/>
+        </scene>
+    </scenes>
+</document>

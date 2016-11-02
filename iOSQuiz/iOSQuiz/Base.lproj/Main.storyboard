@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOSQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gup-OZ-jLK">
+                                <string key="text">Create the cool user interface. As we create the UI, we will get a better understanding of our application. Then we breathe life into our application.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the first step of iOS development?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMA-Vq-6rH">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtz-uC-IdL">
+                                <state key="normal" title="Answer"/>
+                                <connections>
+                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hq6-Yu-uyl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0iF-w8-KeY">
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XKR-ZZ-jE4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gtz-uC-IdL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="Aid-q7-vbu"/>
+                            <constraint firstItem="gup-OZ-jLK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ale-NR-cbV"/>
+                            <constraint firstItem="vMA-Vq-6rH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="O1J-Vm-hjC"/>
+                            <constraint firstItem="vMA-Vq-6rH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="cA2-pO-s4I"/>
+                            <constraint firstItem="0iF-w8-KeY" firstAttribute="baseline" secondItem="gtz-uC-IdL" secondAttribute="baseline" id="eZ4-08-csT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gup-OZ-jLK" secondAttribute="trailing" id="fYO-h2-qSL"/>
+                            <constraint firstItem="0iF-w8-KeY" firstAttribute="top" secondItem="vMA-Vq-6rH" secondAttribute="bottom" constant="8" symbolic="YES" id="gJQ-sA-ObU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vMA-Vq-6rH" secondAttribute="trailing" constant="8" id="pSz-Md-Rl0"/>
+                            <constraint firstItem="gup-OZ-jLK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rIH-tg-y9k"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0iF-w8-KeY" secondAttribute="trailing" constant="8" id="tpf-oa-GTG"/>
+                            <constraint firstItem="gtz-uC-IdL" firstAttribute="top" secondItem="vMA-Vq-6rH" secondAttribute="bottom" constant="8" symbolic="YES" id="uFH-CP-vWj"/>
+                            <constraint firstItem="gup-OZ-jLK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yUe-e2-CfJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="gup-OZ-jLK" id="sK4-Ec-pwh"/>
+                        <outlet property="questionLabel" destination="vMA-Vq-6rH" id="6Jg-Zl-rPf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86" y="-843"/>
+        </scene>
+    </scenes>
+</document>
