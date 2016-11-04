@@ -1,10 +1,10 @@
 import UIKit
 
-var s: String = String(33)
-//print(s)
-//print(Int(String(s[s.startIndex]))! - 1)
-//print(Int(String(s[s.index(before: s.endIndex)]))! - 1)
 
+var price = "10.2"
+var priceDouble = Double(price)
+
+print(priceDouble)
 
 var board: [[Int]] = [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
 
@@ -114,7 +114,7 @@ setSquare(color: 1, tag: 22)
 setSquare(color: 1, tag: 31)
 
 
-printBoard()
+//printBoard()
 
-print(isWinner(color: 1))
+//print(isWinner(color: 1))
 //print(isWinner(color: 0))
