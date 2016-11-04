@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF0024D81DCCE351002263BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0024D71DCCE351002263BA /* AppDelegate.swift */; };
+		EF0024DA1DCCE351002263BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0024D91DCCE351002263BA /* ViewController.swift */; };
+		EF0024DD1DCCE351002263BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF0024DB1DCCE351002263BA /* Main.storyboard */; };
+		EF0024DF1DCCE351002263BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF0024DE1DCCE351002263BA /* Assets.xcassets */; };
+		EF0024E21DCCE351002263BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF0024E01DCCE351002263BA /* LaunchScreen.storyboard */; };
+		EF0024ED1DCCE351002263BA /* Adding_to_the_Beast_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0024EC1DCCE351002263BA /* Adding_to_the_Beast_ListTests.swift */; };
+		EF0024F81DCCE351002263BA /* Adding_to_the_Beast_ListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0024F71DCCE351002263BA /* Adding_to_the_Beast_ListUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF0024E91DCCE351002263BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF0024CC1DCCE350002263BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF0024D31DCCE350002263BA;
+			remoteInfo = "Adding to the Beast List";
+		};
+		EF0024F41DCCE351002263BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF0024CC1DCCE350002263BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF0024D31DCCE350002263BA;
+			remoteInfo = "Adding to the Beast List";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF0024D41DCCE350002263BA /* Adding to the Beast List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adding to the Beast List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF0024D71DCCE351002263BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF0024D91DCCE351002263BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF0024DC1DCCE351002263BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF0024DE1DCCE351002263BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF0024E11DCCE351002263BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF0024E31DCCE351002263BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF0024E81DCCE351002263BA /* Adding to the Beast ListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Adding to the Beast ListTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF0024EC1DCCE351002263BA /* Adding_to_the_Beast_ListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adding_to_the_Beast_ListTests.swift; sourceTree = "<group>"; };
+		EF0024EE1DCCE351002263BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF0024F31DCCE351002263BA /* Adding to the Beast ListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Adding to the Beast ListUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF0024F71DCCE351002263BA /* Adding_to_the_Beast_ListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adding_to_the_Beast_ListUITests.swift; sourceTree = "<group>"; };
+		EF0024F91DCCE351002263BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF0024D11DCCE350002263BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF0024E51DCCE351002263BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF0024F01DCCE351002263BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF0024CB1DCCE350002263BA = {
+			isa = PBXGroup;
+			children = (
+				EF0024D61DCCE350002263BA /* Adding to the Beast List */,
+				EF0024EB1DCCE351002263BA /* Adding to the Beast ListTests */,
+				EF0024F61DCCE351002263BA /* Adding to the Beast ListUITests */,
+				EF0024D51DCCE350002263BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF0024D51DCCE350002263BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF0024D41DCCE350002263BA /* Adding to the Beast List.app */,
+				EF0024E81DCCE351002263BA /* Adding to the Beast ListTests.xctest */,
+				EF0024F31DCCE351002263BA /* Adding to the Beast ListUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF0024D61DCCE350002263BA /* Adding to the Beast List */ = {
+			isa = PBXGroup;
+			children = (
+				EF0024D71DCCE351002263BA /* AppDelegate.swift */,
+				EF0024D91DCCE351002263BA /* ViewController.swift */,
+				EF0024DB1DCCE351002263BA /* Main.storyboard */,
+				EF0024DE1DCCE351002263BA /* Assets.xcassets */,
+				EF0024E01DCCE351002263BA /* LaunchScreen.storyboard */,
+				EF0024E31DCCE351002263BA /* Info.plist */,
+			);
+			path = "Adding to the Beast List";
+			sourceTree = "<group>";
+		};
+		EF0024EB1DCCE351002263BA /* Adding to the Beast ListTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF0024EC1DCCE351002263BA /* Adding_to_the_Beast_ListTests.swift */,
+				EF0024EE1DCCE351002263BA /* Info.plist */,
+			);
+			path = "Adding to the Beast ListTests";
+			sourceTree = "<group>";
+		};
+		EF0024F61DCCE351002263BA /* Adding to the Beast ListUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF0024F71DCCE351002263BA /* Adding_to_the_Beast_ListUITests.swift */,
+				EF0024F91DCCE351002263BA /* Info.plist */,
+			);
+			path = "Adding to the Beast ListUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF0024D31DCCE350002263BA /* Adding to the Beast List */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF0024FC1DCCE351002263BA /* Build configuration list for PBXNativeTarget "Adding to the Beast List" */;
+			buildPhases = (
+				EF0024D01DCCE350002263BA /* Sources */,
+				EF0024D11DCCE350002263BA /* Frameworks */,
+				EF0024D21DCCE350002263BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Adding to the Beast List";
+			productName = "Adding to the Beast List";
+			productReference = EF0024D41DCCE350002263BA /* Adding to the Beast List.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF0024E71DCCE351002263BA /* Adding to the Beast ListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF0024FF1DCCE351002263BA /* Build configuration list for PBXNativeTarget "Adding to the Beast ListTests" */;
+			buildPhases = (
+				EF0024E41DCCE351002263BA /* Sources */,
+				EF0024E51DCCE351002263BA /* Frameworks */,
+				EF0024E61DCCE351002263BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF0024EA1DCCE351002263BA /* PBXTargetDependency */,
+			);
+			name = "Adding to the Beast ListTests";
+			productName = "Adding to the Beast ListTests";
+			productReference = EF0024E81DCCE351002263BA /* Adding to the Beast ListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF0024F21DCCE351002263BA /* Adding to the Beast ListUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF0025021DCCE351002263BA /* Build configuration list for PBXNativeTarget "Adding to the Beast ListUITests" */;
+			buildPhases = (
+				EF0024EF1DCCE351002263BA /* Sources */,
+				EF0024F01DCCE351002263BA /* Frameworks */,
+				EF0024F11DCCE351002263BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF0024F51DCCE351002263BA /* PBXTargetDependency */,
+			);
+			name = "Adding to the Beast ListUITests";
+			productName = "Adding to the Beast ListUITests";
+			productReference = EF0024F31DCCE351002263BA /* Adding to the Beast ListUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF0024CC1DCCE350002263BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Hans Ravnaas";
+				TargetAttributes = {
+					EF0024D31DCCE350002263BA = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					EF0024E71DCCE351002263BA = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EF0024D31DCCE350002263BA;
+					};
+					EF0024F21DCCE351002263BA = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EF0024D31DCCE350002263BA;
+					};
+				};
+			};
+			buildConfigurationList = EF0024CF1DCCE350002263BA /* Build configuration list for PBXProject "Adding to the Beast List" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF0024CB1DCCE350002263BA;
+			productRefGroup = EF0024D51DCCE350002263BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF0024D31DCCE350002263BA /* Adding to the Beast List */,
+				EF0024E71DCCE351002263BA /* Adding to the Beast ListTests */,
+				EF0024F21DCCE351002263BA /* Adding to the Beast ListUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF0024D21DCCE350002263BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF0024E21DCCE351002263BA /* LaunchScreen.storyboard in Resources */,
+				EF0024DF1DCCE351002263BA /* Assets.xcassets in Resources */,
+				EF0024DD1DCCE351002263BA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF0024E61DCCE351002263BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF0024F11DCCE351002263BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF0024D01DCCE350002263BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF0024DA1DCCE351002263BA /* ViewController.swift in Sources */,
+				EF0024D81DCCE351002263BA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF0024E41DCCE351002263BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF0024ED1DCCE351002263BA /* Adding_to_the_Beast_ListTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF0024EF1DCCE351002263BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF0024F81DCCE351002263BA /* Adding_to_the_Beast_ListUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF0024EA1DCCE351002263BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF0024D31DCCE350002263BA /* Adding to the Beast List */;
+			targetProxy = EF0024E91DCCE351002263BA /* PBXContainerItemProxy */;
+		};
+		EF0024F51DCCE351002263BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF0024D31DCCE350002263BA /* Adding to the Beast List */;
+			targetProxy = EF0024F41DCCE351002263BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF0024DB1DCCE351002263BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF0024DC1DCCE351002263BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF0024E01DCCE351002263BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF0024E11DCCE351002263BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF0024FA1DCCE351002263BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF0024FB1DCCE351002263BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF0024FD1DCCE351002263BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Adding to the Beast List/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hans.Adding-to-the-Beast-List";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EF0024FE1DCCE351002263BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Adding to the Beast List/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hans.Adding-to-the-Beast-List";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		EF0025001DCCE351002263BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Adding to the Beast ListTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hans.Adding-to-the-Beast-ListTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Adding to the Beast List.app/Adding to the Beast List";
+			};
+			name = Debug;
+		};
+		EF0025011DCCE351002263BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Adding to the Beast ListTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hans.Adding-to-the-Beast-ListTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Adding to the Beast List.app/Adding to the Beast List";
+			};
+			name = Release;
+		};
+		EF0025031DCCE351002263BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Adding to the Beast ListUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hans.Adding-to-the-Beast-ListUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Adding to the Beast List";
+			};
+			name = Debug;
+		};
+		EF0025041DCCE351002263BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Adding to the Beast ListUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hans.Adding-to-the-Beast-ListUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Adding to the Beast List";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF0024CF1DCCE350002263BA /* Build configuration list for PBXProject "Adding to the Beast List" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF0024FA1DCCE351002263BA /* Debug */,
+				EF0024FB1DCCE351002263BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF0024FC1DCCE351002263BA /* Build configuration list for PBXNativeTarget "Adding to the Beast List" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF0024FD1DCCE351002263BA /* Debug */,
+				EF0024FE1DCCE351002263BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF0024FF1DCCE351002263BA /* Build configuration list for PBXNativeTarget "Adding to the Beast ListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF0025001DCCE351002263BA /* Debug */,
+				EF0025011DCCE351002263BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF0025021DCCE351002263BA /* Build configuration list for PBXNativeTarget "Adding to the Beast ListUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF0025031DCCE351002263BA /* Debug */,
+				EF0025041DCCE351002263BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF0024CC1DCCE350002263BA /* Project object */;
+}
