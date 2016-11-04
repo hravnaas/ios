@@ -12,6 +12,10 @@ import AVFoundation
 class ViewController: UIViewController, UIGestureRecognizerDelegate
 {
     var chompPlayer:AVAudioPlayer? = nil
+    var hehePlayer:AVAudioPlayer? = nil
+    
+    @IBOutlet var monkeyPan: UIPanGestureRecognizer!
+    @IBOutlet var bananaPan: UIPanGestureRecognizer!
     
     func loadSound(filename:NSString) throws -> AVAudioPlayer
     {
@@ -43,6 +47,12 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate
             view.addGestureRecognizer(recognizer)
             
             //TODO: Add a custom gesture recognizer too
+            recognizer.require(toFail: monkeyPan)
+            recognizer.require(toFail: bananaPan)
+            
+            let recognizer2 = TickleGestureRecognizer(target: self, action:#selector(handleTickle(recognizer:)))
+            recognizer2.delegate = self
+            view.addGestureRecognizer(recognizer2)
         }
         do
         {
@@ -67,6 +77,10 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate
 
     @IBAction func handlePan(recognizer:UIPanGestureRecognizer)
     {
+        //comment for panning
+        //uncomment for tickling
+        return;
+        
         let translation = recognizer.translation(in: self.view)
         // recognizer.view is the monkey or banana image
         if let view = recognizer.view
@@ -106,22 +120,30 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate
         }
     }
     
-    @IBAction func handlePinch(recognizer : UIPinchGestureRecognizer) {
+    @IBAction func handlePinch(recognizer : UIPinchGestureRecognizer)
+    {
         if let view = recognizer.view {
             view.transform = view.transform.scaledBy(x: recognizer.scale, y: recognizer.scale)
             recognizer.scale = 1
         }
     }
     
-    @IBAction func handleRotate(recognizer : UIRotationGestureRecognizer) {
+    @IBAction func handleRotate(recognizer : UIRotationGestureRecognizer)
+    {
         if let view = recognizer.view {
             view.transform = view.transform.rotated(by: recognizer.rotation)
             recognizer.rotation = 0
         }
     }
     
-    func handleTap(recognizer: UITapGestureRecognizer) {
+    func handleTap(recognizer: UITapGestureRecognizer)
+    {
         self.chompPlayer?.play()
+    }
+    
+    func handleTickle(recognizer:TickleGestureRecognizer)
+    {
+        self.hehePlayer?.play()
     }
 }
 

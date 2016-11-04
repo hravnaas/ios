@@ -20,6 +20,7 @@
 		EF0025821DCCFF7C002263BA /* hehehe1.caf in Resources */ = {isa = PBXBuildFile; fileRef = EF00257C1DCCFF7C002263BA /* hehehe1.caf */; };
 		EF0025831DCCFF7C002263BA /* monkey.png in Resources */ = {isa = PBXBuildFile; fileRef = EF00257D1DCCFF7C002263BA /* monkey.png */; };
 		EF0025841DCCFF7C002263BA /* monkey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF00257E1DCCFF7C002263BA /* monkey@2x.png */; };
+		EF0025861DCD3B39002263BA /* TickleGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0025851DCD3B39002263BA /* TickleGestureRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		EF00257C1DCCFF7C002263BA /* hehehe1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = hehehe1.caf; sourceTree = "<group>"; };
 		EF00257D1DCCFF7C002263BA /* monkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monkey.png; sourceTree = "<group>"; };
 		EF00257E1DCCFF7C002263BA /* monkey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "monkey@2x.png"; sourceTree = "<group>"; };
+		EF0025851DCD3B39002263BA /* TickleGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickleGestureRecognizer.swift; sourceTree = "<group>"; };
+		EF0025871DCD3C7E002263BA /* MonkeyPitch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MonkeyPitch-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,7 @@
 		EF00253F1DCCFEC5002263BA = {
 			isa = PBXGroup;
 			children = (
+				EF0025851DCD3B39002263BA /* TickleGestureRecognizer.swift */,
 				EF00254A1DCCFEC5002263BA /* MonkeyPitch */,
 				EF00255F1DCCFEC5002263BA /* MonkeyPitchTests */,
 				EF00256A1DCCFEC5002263BA /* MonkeyPitchUITests */,
@@ -99,6 +103,7 @@
 				EF00257C1DCCFF7C002263BA /* hehehe1.caf */,
 				EF00257D1DCCFF7C002263BA /* monkey.png */,
 				EF00257E1DCCFF7C002263BA /* monkey@2x.png */,
+				EF0025871DCD3C7E002263BA /* MonkeyPitch-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -211,6 +216,7 @@
 				TargetAttributes = {
 					EF0025471DCCFEC5002263BA = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					EF00255B1DCCFEC5002263BA = {
@@ -284,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF00254E1DCCFEC5002263BA /* ViewController.swift in Sources */,
+				EF0025861DCD3B39002263BA /* TickleGestureRecognizer.swift in Sources */,
 				EF00254C1DCCFEC5002263BA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,10 +441,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MonkeyPitch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Hans.MonkeyPitch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MonkeyPitch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -446,10 +456,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MonkeyPitch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Hans.MonkeyPitch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MonkeyPitch-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

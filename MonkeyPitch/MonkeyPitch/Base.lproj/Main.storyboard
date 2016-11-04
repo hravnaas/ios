@@ -26,6 +26,7 @@
                                     <outletCollection property="gestureRecognizers" destination="SiU-fx-DzS" appends="YES" id="nNT-3c-Eb5"/>
                                     <outletCollection property="gestureRecognizers" destination="9tj-RC-hyn" appends="YES" id="VZt-8N-jkh"/>
                                     <outletCollection property="gestureRecognizers" destination="FIy-w2-9Nb" appends="YES" id="JLX-hU-QmV"/>
+                                    <outletCollection property="gestureRecognizers" destination="7UM-Xe-sVT" appends="YES" id="jDx-np-tRP"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banana.png" translatesAutoresizingMaskIntoConstraints="NO" id="8TU-cK-tsu">
@@ -41,6 +42,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="bananaPan" destination="Fvf-LJ-L9z" id="Mdu-Da-Qy1"/>
+                        <outlet property="monkeyPan" destination="7UM-Xe-sVT" id="j0c-Nf-XHX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="SiU-fx-DzS">
@@ -75,11 +80,12 @@
                 <rotationGestureRecognizer id="zJS-K8-3b6">
                     <connections>
                         <action selector="handleRotateWithRecognizer:" destination="BYZ-38-t0r" id="IA5-g6-DTC"/>
-                        <outlet property="delegate" destination="BYZ-38-t0r" id="VP2-wf-UXr"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="1Y1-O7-0mF"/>
                     </connections>
                 </rotationGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="7UM-Xe-sVT"/>
             </objects>
-            <point key="canvasLocation" x="188" y="4"/>
+            <point key="canvasLocation" x="-812" y="-205"/>
         </scene>
     </scenes>
     <resources>
