@@ -202,6 +202,7 @@
 				TargetAttributes = {
 					EFC418171DCE8FC10078382B = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = STBKN925D5;
 						ProvisioningStyle = Automatic;
 					};
 					EFC4182B1DCE8FC10078382B = {
@@ -424,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = STBKN925D5;
 				INFOPLIST_FILE = "Bucket List/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Hans.Bucket-List";
@@ -436,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = STBKN925D5;
 				INFOPLIST_FILE = "Bucket List/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Hans.Bucket-List";

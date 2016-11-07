@@ -32,9 +32,21 @@ class BucketListViewController: UITableViewController, CancelButtonDelegate, Mis
         // return cell so that Table View knows what to draw in each row
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath)
+    {
+        performSegue(withIdentifier: "EditMission", sender: tableView.cellForRow(at: indexPath))
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return missions.count
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath)
+    {
+        missions.remove(at: indexPath.row)
+        tableView.reloadData()
     }
     
     func cancelButtonPressedFrom(controller: UIViewController)
@@ -51,12 +63,32 @@ class BucketListViewController: UITableViewController, CancelButtonDelegate, Mis
             controller.cancelButtonDelegate = self
             controller.delegate = self
         }
+        else if segue.identifier == "EditMission"
+        {
+            let navigationController = segue.destination as! UINavigationController
+            let controller = navigationController.topViewController as! MissionDetailsViewController
+            controller.cancelButtonDelegate = self
+            controller.delegate = self
+            // Here we set the missionToEdit so that we can have the mission text on the MissionDetailsViewController
+            if let indexPath = tableView.indexPath(for: sender as! UITableViewCell)
+            {
+                controller.missionToEdit = missions[indexPath.row]
+                controller.missionToEditIndexPath = indexPath.row
+            }
+        }
     }
     
     func missionDetailsViewController(controller: MissionDetailsViewController, didFinishAddingMission mission: String)
     {
         dismiss(animated: true, completion: nil)
         missions.append(mission)
+        tableView.reloadData()
+    }
+    
+    func missionDetailsViewController(controller: MissionDetailsViewController, didFinishEditingMission mission: String, atIndexPath indexPath: Int)
+    {
+        dismiss(animated: true, completion: nil)
+        missions[indexPath] = mission
         tableView.reloadData()
     }
 }
