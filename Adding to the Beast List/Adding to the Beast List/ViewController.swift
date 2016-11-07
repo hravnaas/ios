@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var tasks = ["Exercise for 30 minutes", "Wireframe for some project", "Do laundry"]
     
@@ -18,13 +18,17 @@ class ViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        tableView.delegate = self
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBAction func insertButtonPressed(_ sender: UIButton) {
+    
+    @IBAction func insertButtonPressed(_ sender: UIButton)
+    {
         // TODO: Trim whitespace first
         if !(insertTaskField.text?.isEmpty)!
         {
@@ -53,6 +57,13 @@ class ViewController: UIViewController, UITableViewDataSource {
         
         // return cell so that Table View knows what to draw in each row
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        print("Section: \(indexPath.section) and Row: \(indexPath.row)")
+        tasks.remove(at: indexPath.row)
+        tableView.reloadData()
     }
     
     // ------------------------------------------------------------------

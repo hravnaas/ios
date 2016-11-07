@@ -79,7 +79,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate
     {
         //comment for panning
         //uncomment for tickling
-        return;
+        //return;
         
         let translation = recognizer.translation(in: self.view)
         // recognizer.view is the monkey or banana image

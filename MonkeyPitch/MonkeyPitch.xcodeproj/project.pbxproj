@@ -216,6 +216,7 @@
 				TargetAttributes = {
 					EF0025471DCCFEC5002263BA = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = STBKN925D5;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -442,6 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = STBKN925D5;
 				INFOPLIST_FILE = MonkeyPitch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Hans.MonkeyPitch;
@@ -457,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = STBKN925D5;
 				INFOPLIST_FILE = MonkeyPitch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Hans.MonkeyPitch;
@@ -539,6 +542,7 @@
 				EF0025721DCCFEC5002263BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF0025731DCCFEC5002263BA /* Build configuration list for PBXNativeTarget "MonkeyPitchTests" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +551,7 @@
 				EF0025751DCCFEC5002263BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF0025761DCCFEC5002263BA /* Build configuration list for PBXNativeTarget "MonkeyPitchUITests" */ = {
 			isa = XCConfigurationList;
@@ -555,6 +560,7 @@
 				EF0025781DCCFEC5002263BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
