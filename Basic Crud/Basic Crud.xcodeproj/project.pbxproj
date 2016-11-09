@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EFC418961DD101E90078382B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC418951DD101E90078382B /* AppDelegate.swift */; };
+		EFC418981DD101E90078382B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC418971DD101E90078382B /* ViewController.swift */; };
+		EFC4189B1DD101E90078382B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC418991DD101E90078382B /* Main.storyboard */; };
+		EFC4189E1DD101E90078382B /* Basic_Crud.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EFC4189C1DD101E90078382B /* Basic_Crud.xcdatamodeld */; };
+		EFC418A01DD101E90078382B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFC4189F1DD101E90078382B /* Assets.xcassets */; };
+		EFC418A31DD101E90078382B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC418A11DD101E90078382B /* LaunchScreen.storyboard */; };
+		EFC418AE1DD101E90078382B /* Basic_CrudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC418AD1DD101E90078382B /* Basic_CrudTests.swift */; };
+		EFC418B91DD101E90078382B /* Basic_CrudUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC418B81DD101E90078382B /* Basic_CrudUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFC418AA1DD101E90078382B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFC4188A1DD101E90078382B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFC418911DD101E90078382B;
+			remoteInfo = "Basic Crud";
+		};
+		EFC418B51DD101E90078382B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFC4188A1DD101E90078382B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFC418911DD101E90078382B;
+			remoteInfo = "Basic Crud";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EFC418921DD101E90078382B /* Basic Crud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Basic Crud.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFC418951DD101E90078382B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EFC418971DD101E90078382B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EFC4189A1DD101E90078382B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EFC4189D1DD101E90078382B /* Basic_Crud.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Basic_Crud.xcdatamodel; sourceTree = "<group>"; };
+		EFC4189F1DD101E90078382B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFC418A21DD101E90078382B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EFC418A41DD101E90078382B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFC418A91DD101E90078382B /* Basic CrudTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Basic CrudTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFC418AD1DD101E90078382B /* Basic_CrudTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basic_CrudTests.swift; sourceTree = "<group>"; };
+		EFC418AF1DD101E90078382B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFC418B41DD101E90078382B /* Basic CrudUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Basic CrudUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFC418B81DD101E90078382B /* Basic_CrudUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basic_CrudUITests.swift; sourceTree = "<group>"; };
+		EFC418BA1DD101E90078382B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFC4188F1DD101E90078382B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFC418A61DD101E90078382B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFC418B11DD101E90078382B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFC418891DD101E90078382B = {
+			isa = PBXGroup;
+			children = (
+				EFC418941DD101E90078382B /* Basic Crud */,
+				EFC418AC1DD101E90078382B /* Basic CrudTests */,
+				EFC418B71DD101E90078382B /* Basic CrudUITests */,
+				EFC418931DD101E90078382B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFC418931DD101E90078382B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFC418921DD101E90078382B /* Basic Crud.app */,
+				EFC418A91DD101E90078382B /* Basic CrudTests.xctest */,
+				EFC418B41DD101E90078382B /* Basic CrudUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFC418941DD101E90078382B /* Basic Crud */ = {
+			isa = PBXGroup;
+			children = (
+				EFC418951DD101E90078382B /* AppDelegate.swift */,
+				EFC418971DD101E90078382B /* ViewController.swift */,
+				EFC418991DD101E90078382B /* Main.storyboard */,
+				EFC4189F1DD101E90078382B /* Assets.xcassets */,
+				EFC418A11DD101E90078382B /* LaunchScreen.storyboard */,
+				EFC418A41DD101E90078382B /* Info.plist */,
+				EFC4189C1DD101E90078382B /* Basic_Crud.xcdatamodeld */,
+			);
+			path = "Basic Crud";
+			sourceTree = "<group>";
+		};
+		EFC418AC1DD101E90078382B /* Basic CrudTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFC418AD1DD101E90078382B /* Basic_CrudTests.swift */,
+				EFC418AF1DD101E90078382B /* Info.plist */,
+			);
+			path = "Basic CrudTests";
+			sourceTree = "<group>";
+		};
+		EFC418B71DD101E90078382B /* Basic CrudUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EFC418B81DD101E90078382B /* Basic_CrudUITests.swift */,
+				EFC418BA1DD101E90078382B /* Info.plist */,
+			);
+			path = "Basic CrudUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFC418911DD101E90078382B /* Basic Crud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFC418BD1DD101E90078382B /* Build configuration list for PBXNativeTarget "Basic Crud" */;
+			buildPhases = (
+				EFC4188E1DD101E90078382B /* Sources */,
+				EFC4188F1DD101E90078382B /* Frameworks */,
+				EFC418901DD101E90078382B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Basic Crud";
+			productName = "Basic Crud";
+			productReference = EFC418921DD101E90078382B /* Basic Crud.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EFC418A81DD101E90078382B /* Basic CrudTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFC418C01DD101E90078382B /* Build configuration list for PBXNativeTarget "Basic CrudTests" */;
+			buildPhases = (
+				EFC418A51DD101E90078382B /* Sources */,
+				EFC418A61DD101E90078382B /* Frameworks */,
+				EFC418A71DD101E90078382B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFC418AB1DD101E90078382B /* PBXTargetDependency */,
+			);
+			name = "Basic CrudTests";
+			productName = "Basic CrudTests";
+			productReference = EFC418A91DD101E90078382B /* Basic CrudTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EFC418B31DD101E90078382B /* Basic CrudUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFC418C31DD101E90078382B /* Build configuration list for PBXNativeTarget "Basic CrudUITests" */;
+			buildPhases = (
+				EFC418B01DD101E90078382B /* Sources */,
+				EFC418B11DD101E90078382B /* Frameworks */,
+				EFC418B21DD101E90078382B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFC418B61DD101E90078382B /* PBXTargetDependency */,
+			);
+			name = "Basic CrudUITests";
+			productName = "Basic CrudUITests";
+			productReference = EFC418B41DD101E90078382B /* Basic CrudUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFC4188A1DD101E90078382B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Hans Ravnaas";
+				TargetAttributes = {
+					EFC418911DD101E90078382B = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					EFC418A81DD101E90078382B = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EFC418911DD101E90078382B;
+					};
+					EFC418B31DD101E90078382B = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EFC418911DD101E90078382B;
+					};
+				};
+			};
+			buildConfigurationList = EFC4188D1DD101E90078382B /* Build configuration list for PBXProject "Basic Crud" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFC418891DD101E90078382B;
+			productRefGroup = EFC418931DD101E90078382B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFC418911DD101E90078382B /* Basic Crud */,
+				EFC418A81DD101E90078382B /* Basic CrudTests */,
+				EFC418B31DD101E90078382B /* Basic CrudUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFC418901DD101E90078382B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFC418A31DD101E90078382B /* LaunchScreen.storyboard in Resources */,
+				EFC418A01DD101E90078382B /* Assets.xcassets in Resources */,
+				EFC4189B1DD101E90078382B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFC418A71DD101E90078382B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFC418B21DD101E90078382B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFC4188E1DD101E90078382B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFC418981DD101E90078382B /* ViewController.swift in Sources */,
+				EFC4189E1DD101E90078382B /* Basic_Crud.xcdatamodeld in Sources */,
+				EFC418961DD101E90078382B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFC418A51DD101E90078382B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFC418AE1DD101E90078382B /* Basic_CrudTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFC418B01DD101E90078382B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFC418B91DD101E90078382B /* Basic_CrudUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFC418AB1DD101E90078382B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFC418911DD101E90078382B /* Basic Crud */;
+			targetProxy = EFC418AA1DD101E90078382B /* PBXContainerItemProxy */;
+		};
+		EFC418B61DD101E90078382B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFC418911DD101E90078382B /* Basic Crud */;
+			targetProxy = EFC418B51DD101E90078382B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EFC418991DD101E90078382B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFC4189A1DD101E90078382B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EFC418A11DD101E90078382B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFC418A21DD101E90078382B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFC418BB1DD101E90078382B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFC418BC1DD101E90078382B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFC418BE1DD101E90078382B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Basic Crud/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hans.Basic-Crud";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EFC418BF1DD101E90078382B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Basic Crud/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hans.Basic-Crud";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		EFC418C11DD101E90078382B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Basic CrudTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hans.Basic-CrudTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Basic Crud.app/Basic Crud";
+			};
+			name = Debug;
+		};
+		EFC418C21DD101E90078382B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Basic CrudTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hans.Basic-CrudTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Basic Crud.app/Basic Crud";
+			};
+			name = Release;
+		};
+		EFC418C41DD101E90078382B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Basic CrudUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hans.Basic-CrudUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Basic Crud";
+			};
+			name = Debug;
+		};
+		EFC418C51DD101E90078382B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Basic CrudUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hans.Basic-CrudUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Basic Crud";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFC4188D1DD101E90078382B /* Build configuration list for PBXProject "Basic Crud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFC418BB1DD101E90078382B /* Debug */,
+				EFC418BC1DD101E90078382B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFC418BD1DD101E90078382B /* Build configuration list for PBXNativeTarget "Basic Crud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFC418BE1DD101E90078382B /* Debug */,
+				EFC418BF1DD101E90078382B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFC418C01DD101E90078382B /* Build configuration list for PBXNativeTarget "Basic CrudTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFC418C11DD101E90078382B /* Debug */,
+				EFC418C21DD101E90078382B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFC418C31DD101E90078382B /* Build configuration list for PBXNativeTarget "Basic CrudUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFC418C41DD101E90078382B /* Debug */,
+				EFC418C51DD101E90078382B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EFC4189C1DD101E90078382B /* Basic_Crud.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EFC4189D1DD101E90078382B /* Basic_Crud.xcdatamodel */,
+			);
+			currentVersion = EFC4189D1DD101E90078382B /* Basic_Crud.xcdatamodel */;
+			path = Basic_Crud.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EFC4188A1DD101E90078382B /* Project object */;
+}
