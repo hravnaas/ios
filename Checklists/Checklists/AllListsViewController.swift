@@ -48,6 +48,13 @@ class AllListsViewController: UITableViewController, ListDetailViewControllerDel
 		return cell
 	}
 	
+	override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath)
+	{
+		dataModel.lists.remove(at: indexPath.row)
+		let indexPaths = [indexPath]
+		tableView.deleteRows(at: indexPaths, with: .automatic)
+	}
+	
 	func makeCell(for tableView: UITableView) -> UITableViewCell
 	{
 		let cellIdentifier = "Cell"

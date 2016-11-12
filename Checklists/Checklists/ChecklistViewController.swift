@@ -53,9 +53,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
 	                        commit editingStyle: UITableViewCellEditingStyle,
 	                        forRowAt indexPath: IndexPath)
 	{
-		// 1
 		checklist.items.remove(at: indexPath.row)
-		// 2
 		let indexPaths = [indexPath]
 		tableView.deleteRows(at: indexPaths, with: .automatic)
 	}
