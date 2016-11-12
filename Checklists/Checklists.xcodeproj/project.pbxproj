@@ -11,9 +11,13 @@
 		EF4564C31DD3CE8900B14FE2 /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4564C21DD3CE8900B14FE2 /* ChecklistViewController.swift */; };
 		EF4564C61DD3CE8900B14FE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF4564C41DD3CE8900B14FE2 /* Main.storyboard */; };
 		EF4564C81DD3CE8900B14FE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF4564C71DD3CE8900B14FE2 /* Assets.xcassets */; };
-		EF4564CB1DD3CE8900B14FE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF4564C91DD3CE8900B14FE2 /* LaunchScreen.storyboard */; };
 		EF4564D31DD3ECAB00B14FE2 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4564D21DD3ECAB00B14FE2 /* ChecklistItem.swift */; };
 		EF4564D51DD409A300B14FE2 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4564D41DD409A300B14FE2 /* ItemDetailViewController.swift */; };
+		EF4564D71DD547EA00B14FE2 /* AllListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4564D61DD547EA00B14FE2 /* AllListsViewController.swift */; };
+		EF4564D91DD5505B00B14FE2 /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4564D81DD5505B00B14FE2 /* Checklist.swift */; };
+		EF4564DB1DD61CC500B14FE2 /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4564DA1DD61CC500B14FE2 /* ListDetailViewController.swift */; };
+		EF4564DD1DD6452000B14FE2 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4564DC1DD6452000B14FE2 /* DataModel.swift */; };
+		EF4564DF1DD67D0700B14FE2 /* IconPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4564DE1DD67D0700B14FE2 /* IconPickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +26,14 @@
 		EF4564C21DD3CE8900B14FE2 /* ChecklistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ChecklistViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		EF4564C51DD3CE8900B14FE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF4564C71DD3CE8900B14FE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EF4564CA1DD3CE8900B14FE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF4564CC1DD3CE8900B14FE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF4564D21DD3ECAB00B14FE2 /* ChecklistItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
 		EF4564D41DD409A300B14FE2 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ItemDetailViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		EF4564D61DD547EA00B14FE2 /* AllListsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllListsViewController.swift; sourceTree = "<group>"; };
+		EF4564D81DD5505B00B14FE2 /* Checklist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
+		EF4564DA1DD61CC500B14FE2 /* ListDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDetailViewController.swift; sourceTree = "<group>"; };
+		EF4564DC1DD6452000B14FE2 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		EF4564DE1DD67D0700B14FE2 /* IconPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconPickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +70,14 @@
 				EF4564C21DD3CE8900B14FE2 /* ChecklistViewController.swift */,
 				EF4564C41DD3CE8900B14FE2 /* Main.storyboard */,
 				EF4564C71DD3CE8900B14FE2 /* Assets.xcassets */,
-				EF4564C91DD3CE8900B14FE2 /* LaunchScreen.storyboard */,
 				EF4564CC1DD3CE8900B14FE2 /* Info.plist */,
 				EF4564D21DD3ECAB00B14FE2 /* ChecklistItem.swift */,
 				EF4564D41DD409A300B14FE2 /* ItemDetailViewController.swift */,
+				EF4564D61DD547EA00B14FE2 /* AllListsViewController.swift */,
+				EF4564D81DD5505B00B14FE2 /* Checklist.swift */,
+				EF4564DA1DD61CC500B14FE2 /* ListDetailViewController.swift */,
+				EF4564DC1DD6452000B14FE2 /* DataModel.swift */,
+				EF4564DE1DD67D0700B14FE2 /* IconPickerViewController.swift */,
 			);
 			path = Checklists;
 			sourceTree = "<group>";
@@ -130,7 +142,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF4564CB1DD3CE8900B14FE2 /* LaunchScreen.storyboard in Resources */,
 				EF4564C81DD3CE8900B14FE2 /* Assets.xcassets in Resources */,
 				EF4564C61DD3CE8900B14FE2 /* Main.storyboard in Resources */,
 			);
@@ -144,8 +155,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF4564C31DD3CE8900B14FE2 /* ChecklistViewController.swift in Sources */,
+				EF4564DD1DD6452000B14FE2 /* DataModel.swift in Sources */,
+				EF4564DB1DD61CC500B14FE2 /* ListDetailViewController.swift in Sources */,
+				EF4564DF1DD67D0700B14FE2 /* IconPickerViewController.swift in Sources */,
 				EF4564D51DD409A300B14FE2 /* ItemDetailViewController.swift in Sources */,
+				EF4564D91DD5505B00B14FE2 /* Checklist.swift in Sources */,
 				EF4564D31DD3ECAB00B14FE2 /* ChecklistItem.swift in Sources */,
+				EF4564D71DD547EA00B14FE2 /* AllListsViewController.swift in Sources */,
 				EF4564C11DD3CE8900B14FE2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,14 +175,6 @@
 				EF4564C51DD3CE8900B14FE2 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EF4564C91DD3CE8900B14FE2 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EF4564CA1DD3CE8900B14FE2 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -308,6 +316,7 @@
 				EF4564D11DD3CE8900B14FE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
