@@ -1,5 +1,6 @@
 import UIKit
 import CoreLocation
+import CoreData
 
 private let dateFormatter: DateFormatter = {
 	let formatter = DateFormatter()
@@ -19,6 +20,8 @@ class LocationDetailsViewController: UITableViewController {
 	var coordinate = CLLocationCoordinate2D(latitude: 0, longitude: 0)
 	var placemark: CLPlacemark?
 	var categoryName = "No Category"
+	var managedObjectContext: NSManagedObjectContext!
+	var date = Date()
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -32,7 +35,21 @@ class LocationDetailsViewController: UITableViewController {
 			addressLabel.text = "No Address Found"
 		}
 		
-		dateLabel.text = format(date: Date())
+		dateLabel.text = format(date: date)
+		
+		let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+		gestureRecognizer.cancelsTouchesInView = false
+		tableView.addGestureRecognizer(gestureRecognizer)
+	}
+	
+	func hideKeyboard(_ gestureRecognizer: UIGestureRecognizer) {
+		let point = gestureRecognizer.location(in: tableView)
+		let indexPath = tableView.indexPathForRow(at: point)
+		if indexPath != nil && indexPath!.section == 0 && indexPath!.row == 0 {
+			return
+		}
+		
+		descriptionTextView.resignFirstResponder()
 	}
 	
 	func string(from placemark: CLPlacemark) -> String {
@@ -63,7 +80,26 @@ class LocationDetailsViewController: UITableViewController {
 	}
 	
 	@IBAction func done() {
-		dismiss(animated: true, completion: nil)
+		let hudView = HudView.hud(inView: navigationController!.view, animated: true)
+		hudView.text = "Tagged"
+
+		let location = MyLocation(context: managedObjectContext)
+		location.locationDescription = descriptionTextView.text
+		location.category = categoryName
+		location.latitude = coordinate.latitude
+		location.longitude = coordinate.longitude
+		location.date = date
+		location.placemark = placemark
+		
+		do {
+			try managedObjectContext.save()
+			afterDelay(0.6) {
+				self.dismiss(animated: true, completion: nil)
+			}
+		}
+		catch {
+			fatalCoreDataError(error)
+		}
 	}
 	
 	@IBAction func cancel() {
@@ -96,4 +132,20 @@ class LocationDetailsViewController: UITableViewController {
 		categoryName = controller.selectedCategoryName
 		categoryLabel.text = categoryName
 	}
+	
+	override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+		if indexPath.section == 0 || indexPath.section == 1 {
+			return indexPath
+		} else {
+			return nil
+		}
+	}
+	
+	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		if indexPath.section == 0 && indexPath.row == 0 {
+			descriptionTextView.becomeFirstResponder()
+		}
+	}
+	
+	
 }
