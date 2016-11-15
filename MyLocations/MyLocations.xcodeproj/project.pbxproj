@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF145CA31DDA652000DB48FF /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF145CA21DDA652000DB48FF /* LocationDetailsViewController.swift */; };
+		EF145CA51DDA80B900DB48FF /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF145CA41DDA80B900DB48FF /* CategoryPickerViewController.swift */; };
 		EF702F221DD929E4003460ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF702F211DD929E4003460ED /* AppDelegate.swift */; };
 		EF702F241DD929E4003460ED /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF702F231DD929E4003460ED /* CurrentLocationViewController.swift */; };
 		EF702F261DD929E4003460ED /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF702F251DD929E4003460ED /* SecondViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF145CA21DDA652000DB48FF /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
+		EF145CA41DDA80B900DB48FF /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
 		EF702F1E1DD929E4003460ED /* MyLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF702F211DD929E4003460ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF702F231DD929E4003460ED /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				EF702F2A1DD929E4003460ED /* Assets.xcassets */,
 				EF702F2C1DD929E4003460ED /* LaunchScreen.storyboard */,
 				EF702F2F1DD929E4003460ED /* Info.plist */,
+				EF145CA21DDA652000DB48FF /* LocationDetailsViewController.swift */,
+				EF145CA41DDA80B900DB48FF /* CategoryPickerViewController.swift */,
 			);
 			path = MyLocations;
 			sourceTree = "<group>";
@@ -140,8 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF145CA31DDA652000DB48FF /* LocationDetailsViewController.swift in Sources */,
 				EF702F261DD929E4003460ED /* SecondViewController.swift in Sources */,
 				EF702F221DD929E4003460ED /* AppDelegate.swift in Sources */,
+				EF145CA51DDA80B900DB48FF /* CategoryPickerViewController.swift in Sources */,
 				EF702F241DD929E4003460ED /* CurrentLocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +312,7 @@
 				EF702F341DD929E4003460ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
