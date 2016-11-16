@@ -14,9 +14,12 @@
 		EF145CAC1DDB891B00DB48FF /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF145CAA1DDB891B00DB48FF /* DataModel.xcdatamodeld */; };
 		EF145CB31DDB8F4D00DB48FF /* MyLocation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF145CB11DDB8F4D00DB48FF /* MyLocation+CoreDataClass.swift */; };
 		EF145CB41DDB8F4D00DB48FF /* MyLocation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF145CB21DDB8F4D00DB48FF /* MyLocation+CoreDataProperties.swift */; };
+		EF145CB61DDBBC5B00DB48FF /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF145CB51DDBBC5B00DB48FF /* LocationsViewController.swift */; };
+		EF145CB81DDBC54100DB48FF /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF145CB71DDBC54100DB48FF /* LocationCell.swift */; };
+		EF145CBB1DDBE7D800DB48FF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF145CBA1DDBE7D800DB48FF /* MapKit.framework */; };
+		EF145CBD1DDBE88C00DB48FF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF145CBC1DDBE88C00DB48FF /* MapViewController.swift */; };
 		EF702F221DD929E4003460ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF702F211DD929E4003460ED /* AppDelegate.swift */; };
 		EF702F241DD929E4003460ED /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF702F231DD929E4003460ED /* CurrentLocationViewController.swift */; };
-		EF702F261DD929E4003460ED /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF702F251DD929E4003460ED /* SecondViewController.swift */; };
 		EF702F291DD929E4003460ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF702F271DD929E4003460ED /* Main.storyboard */; };
 		EF702F2B1DD929E4003460ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF702F2A1DD929E4003460ED /* Assets.xcassets */; };
 		EF702F2E1DD929E4003460ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF702F2C1DD929E4003460ED /* LaunchScreen.storyboard */; };
@@ -30,10 +33,13 @@
 		EF145CAB1DDB891B00DB48FF /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		EF145CB11DDB8F4D00DB48FF /* MyLocation+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MyLocation+CoreDataClass.swift"; sourceTree = "<group>"; };
 		EF145CB21DDB8F4D00DB48FF /* MyLocation+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MyLocation+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EF145CB51DDBBC5B00DB48FF /* LocationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
+		EF145CB71DDBC54100DB48FF /* LocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		EF145CBA1DDBE7D800DB48FF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EF145CBC1DDBE88C00DB48FF /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		EF702F1E1DD929E4003460ED /* MyLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF702F211DD929E4003460ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF702F231DD929E4003460ED /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
-		EF702F251DD929E4003460ED /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		EF702F281DD929E4003460ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF702F2A1DD929E4003460ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF702F2D1DD929E4003460ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -45,12 +51,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF145CBB1DDBE7D800DB48FF /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF145CB91DDBE7D800DB48FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF145CBA1DDBE7D800DB48FF /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EF702F151DD929E4003460ED = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +73,7 @@
 				EF145CB21DDB8F4D00DB48FF /* MyLocation+CoreDataProperties.swift */,
 				EF702F201DD929E4003460ED /* MyLocations */,
 				EF702F1F1DD929E4003460ED /* Products */,
+				EF145CB91DDBE7D800DB48FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,17 +89,19 @@
 			isa = PBXGroup;
 			children = (
 				EF702F211DD929E4003460ED /* AppDelegate.swift */,
-				EF702F231DD929E4003460ED /* CurrentLocationViewController.swift */,
-				EF702F251DD929E4003460ED /* SecondViewController.swift */,
-				EF702F271DD929E4003460ED /* Main.storyboard */,
 				EF702F2A1DD929E4003460ED /* Assets.xcassets */,
-				EF702F2C1DD929E4003460ED /* LaunchScreen.storyboard */,
-				EF702F2F1DD929E4003460ED /* Info.plist */,
-				EF145CA21DDA652000DB48FF /* LocationDetailsViewController.swift */,
 				EF145CA41DDA80B900DB48FF /* CategoryPickerViewController.swift */,
-				EF145CA61DDA906C00DB48FF /* HudView.swift */,
-				EF145CA81DDB841300DB48FF /* Functions.swift */,
+				EF702F231DD929E4003460ED /* CurrentLocationViewController.swift */,
 				EF145CAA1DDB891B00DB48FF /* DataModel.xcdatamodeld */,
+				EF145CA81DDB841300DB48FF /* Functions.swift */,
+				EF145CA61DDA906C00DB48FF /* HudView.swift */,
+				EF702F2F1DD929E4003460ED /* Info.plist */,
+				EF702F2C1DD929E4003460ED /* LaunchScreen.storyboard */,
+				EF145CB71DDBC54100DB48FF /* LocationCell.swift */,
+				EF145CA21DDA652000DB48FF /* LocationDetailsViewController.swift */,
+				EF145CB51DDBBC5B00DB48FF /* LocationsViewController.swift */,
+				EF702F271DD929E4003460ED /* Main.storyboard */,
+				EF145CBC1DDBE88C00DB48FF /* MapViewController.swift */,
 			);
 			path = MyLocations;
 			sourceTree = "<group>";
@@ -122,6 +140,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = STBKN925D5;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -163,8 +186,10 @@
 			files = (
 				EF145CB41DDB8F4D00DB48FF /* MyLocation+CoreDataProperties.swift in Sources */,
 				EF145CA31DDA652000DB48FF /* LocationDetailsViewController.swift in Sources */,
+				EF145CB81DDBC54100DB48FF /* LocationCell.swift in Sources */,
 				EF145CAC1DDB891B00DB48FF /* DataModel.xcdatamodeld in Sources */,
-				EF702F261DD929E4003460ED /* SecondViewController.swift in Sources */,
+				EF145CB61DDBBC5B00DB48FF /* LocationsViewController.swift in Sources */,
+				EF145CBD1DDBE88C00DB48FF /* MapViewController.swift in Sources */,
 				EF145CA71DDA906C00DB48FF /* HudView.swift in Sources */,
 				EF145CB31DDB8F4D00DB48FF /* MyLocation+CoreDataClass.swift in Sources */,
 				EF145CA91DDB841300DB48FF /* Functions.swift in Sources */,
